@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 5 Exercises</title>
+    <!-- Linking Bootstrap 5 via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            padding-top: 20px;
+        }
+        .exercise {
+            margin-bottom: 40px;
+        }
+        .exercise h2 {
+            color: #007bff;
+        }
+        .exercise-description {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Exercise 1.1: Basic HTML page and Bootstrap via CDN -->
+    <div class="exercise">
+        <h2>Exercise 1.1: Basic HTML Page and Bootstrap via CDN</h2>
+        <p class="exercise-description">This is a simple HTML page with Bootstrap linked via CDN.</p>
+        <h1 class="text-center">Hello, Bootstrap!</h1>
+    </div>
+
+    <!-- Exercise 1.2: Bootstrap Setup Using Downloaded Files -->
+    <div class="exercise">
+        <h2>Exercise 1.2: Bootstrap Setup Using Downloaded Files</h2>
+        <p class="exercise-description">This is how you can set up Bootstrap by downloading the files.</p>
+        <pre>
+            &lt;link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"&gt;
+            &lt;script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+        </pre>
+    </div>
+
+    <!-- Exercise 2.1: Bootstrap Structure -->
+    <div class="exercise">
+        <h2>Exercise 2.1: Bootstrap Structure</h2>
+        <p class="exercise-description">The Bootstrap directory contains important files like CSS, JS, and icons folders.</p>
+        <p><strong>CSS folder:</strong> Contains the compiled Bootstrap CSS files.</p>
+        <p><strong>JS folder:</strong> Contains the Bootstrap JavaScript files (for modals, tooltips, etc.).</p>
+        <p><strong>Icons folder:</strong> Contains Bootstrap icons in SVG format.</p>
+    </div>
+
+    <!-- Exercise 2.2: Include Bootstrap's JavaScript Plugins -->
+    <div class="exercise">
+        <h2>Exercise 2.2: Include Bootstrap's JavaScript Plugins</h2>
+        <p class="exercise-description">You can add the JavaScript plugins using <code>bootstrap.bundle.min.js</code>.</p>
+        <pre>
+            &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+        </pre>
+    </div>
+
+    <!-- Exercise 3.1: Responsive Grid with Three Columns -->
+    <div class="exercise">
+        <h2>Exercise 3.1: Responsive Grid with Three Columns</h2>
+        <p class="exercise-description">This grid adjusts the layout based on the screen size.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-4">Column 1</div>
+                <div class="col-12 col-sm-6 col-md-4">Column 2</div>
+                <div class="col-12 col-sm-6 col-md-4">Column 3</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Exercise 3.2: Using .container, .row, .col-* Classes -->
+    <div class="exercise">
+        <h2>Exercise 3.2: Using .container, .row, .col-* Classes</h2>
+        <p class="exercise-description">This layout uses Bootstrap's container and grid system to create a two-column layout.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">Content 1</div>
+                <div class="col-md-6">Content 2</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Exercise 4.1: Two-column Layout with Sidebar -->
+    <div class="exercise">
+        <h2>Exercise 4.1: Two-column Layout with Sidebar</h2>
+        <p class="exercise-description">A sidebar layout using Bootstrap grid.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">Sidebar</div>
+                <div class="col-md-9">Main Content</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Exercise 4.2: Four-column Layout with Equal Width -->
+    <div class="exercise">
+        <h2>Exercise 4.2: Four-column Layout with Equal Width</h2>
+        <p class="exercise-description">Creating four columns of equal width using the grid system.</p>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">Column 1</div>
+                <div class="col-sm-3">Column 2</div>
+                <div class="col-sm-3">Column 3</div>
+                <div class="col-sm-3">Column 4</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Exercise 5.1: Center Content Inside a Row -->
+    <div class="exercise">
+        <h2>Exercise 5.1: Center Content Inside a Row</h2>
+        <p class="exercise-description">Centering content inside a row using Bootstrap's flex utilities.</p>
+        <div class="row justify-content-center align-items-center" style="height: 100px;">
+            <div class="col-4 bg-light">Centered Content</div>
+        </div>
+    </div>
+
+    <!-- Exercise 5.2: Reordering Columns -->
+    <div class="exercise">
+        <h2>Exercise 5.2: Reordering Columns</h2>
+        <p class="exercise-description">Reordering columns for different screen sizes.</p>
+        <div class="row">
+            <div class="col-md-6 order-md-2">Second Column</div>
+            <div class="col-md-6 order-md-1">First Column</div>
+        </div>
+    </div>
+
+    <!-- Exercise 7.1: Navbar with Flexbox -->
+    <div class="exercise">
+        <h2>Exercise 7.1: Navbar with Flexbox</h2>
+        <p class="exercise-description">A responsive navbar using Bootstrap's flex utilities.</p>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Exercise 7.2: Card Layout with Justify and Align -->
+    <div class="exercise">
+        <h2>Exercise 7.2: Card Layout with Justify and Align</h2>
+        <p class="exercise-description">Using flex utilities in a card layout.</p>
+        <div class="card d-flex justify-content-between align-items-center">
+            <div class="card-body">Card Content</div>
+        </div>
+    </div>
+
+    <!-- Exercise 8.1: Registration Form -->
+    <div class="exercise">
+        <h2>Exercise 8.1: Registration Form</h2>
+        <p class="exercise-description">A basic registration form using Bootstrap form components.</p>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="remember">
+                <label class="form-check-label" for="remember">Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <!-- Exercise 8.2: Login Form with Floating Labels -->
+    <div class="exercise">
+        <h2>Exercise 8.2: Login Form with Floating Labels</h2>
+        <p class="exercise-description">A login form using the <code>form-floating</code> class.</p>
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            <label for="email">Email address</label>
+        </div>
+    </div>
+
+    <!-- Exercise 9.1: Buttons with Contextual Classes -->
+    <div class="exercise">
+        <h2>Exercise 9.1: Buttons with Contextual Classes</h2>
+        <p class="exercise-description">Create buttons using different contextual classes.</p>
+        <button class="btn btn-primary">Primary Button</button>
+        <button class="btn btn-secondary">Secondary Button</button>
+        <button class="btn btn-outline-primary">Outline Primary</button>
+    </div>
+
+    <!-- Exercise 9.2: Button Groups -->
+    <div class="exercise">
+        <h2>Exercise 9.2: Button Groups</h2>
+        <p class="exercise-description">Create button groups using the <code>btn-group</code> class.</p>
+        <div class="btn-group">
+            <button class="btn btn-primary">Left</button>
+            <button class="btn btn-primary">Middle</button>
+            <button class="btn btn-primary">Right</button>
+        </div>
+    </div>
+
+    <!-- Exercise 10.1: Responsive Navbar -->
+    <div class="exercise">
+        <h2>Exercise 10.1: Responsive Navbar</h2>
+        <p class="exercise-description">A responsive navbar with logo, navigation links, and search form.</p>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Logo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+
+</div>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
